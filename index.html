@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Dog Care
+    </title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">PetLife</a>
+                <img src="1.PNG" alt="Dogs needs support" style="height: 50px;">
+            </div>
+            <button class="navbar-toggler"id="navbut" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" href="index2.html">Give Your Pet</a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="box1">
+        <div class="sub">
+            <h1 class="title"><b>Can you ignore those cute sad eyes?</b></h1>
+            <h2 class="title2">Adoption can change their life! </h2>
+            <button onclick="location.href='index3.html'" type="button" class="btn btn-primary btn-lg" id="btnbtn">Adopt a Pet</button>
+
+        </div>
+
+    </div>
+
+    <div class="box2">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-10 offset-md-1">
+                    <p id="dogInfo"></p>
+                    <h2><b>Avaliable Breeds</b></h2>
+                    <button class="btn btn-primary random">Click here to see Breeds </button>
+                    <div class="alert alert-danger" role="alert"></div>
+                    <div id="randomImageContainer"></div>
+                    <p class="dogInfo h5">Random image of a...</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-10 offset-md-1">
+                        <h1 style="margin-top: 5%;"><b>Select Breed from a dropdown to Adopt</b></h1>
+                        <div class="form-group">
+                            <select name="doggosDropdown" id="doggoDropDown" class="form-control"></select>
+                        </div>
+                        <div id="listImageContainer"></div>
+                        <button class="btn btn-primary list" id="showmore">More from this breed please!</button>
+                    </div>
+                </div>
+            </div>
+            <!--end container-->
+        </div>
+        <!--end container fluid-->
+
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-10 offset-md-1">
+                    <h1 id="adopted">Yess! We Found our new owner recently</h1>
+                    <div class="card-deck mb-3 text-center"> </div>
+                    <button class="btn btn-primary grid">Show more Adopted Dogs</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold" style="margin-top:5%; margin-top: 20%;"><b>Jivdaya
+                            Foundation (NGO)</b></h5>
+                    <p>
+                        We strongly believe that pet adoption can make our world better because
+                        people can change their life and become kinder and happier only showing mercy to animals
+                        and being responsible.
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold" style="margin-top:5%">Address:</h5>
+                    <p>Jivdaya Foundation, Near Balaji mandir
+                        In between jijau lawn and vj lawn, Mumbai-Pune Highway, Pune, Maharashtra 431001</p>
+                    <h5 class="text-uppercase font-weight-bold" style="margin-top:5%">Contact:</h5>
+                    <p>Mobile No : +91 - 12345 67890</p>
+                    <h5 class="text-uppercase font-weight-bold" style="margin-top:5%">Mail:</h5>
+                    <p>jivdayafound@gmail.com</p>
+
+                  
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a style="margin-left: 2%;" href="#" class="fa fa-twitter"></a>
+                    <a style="margin-left: 2%;" href="#" class="fa fa-google"></a>
+                    <a style="margin-left: 2%;" href="#" class="fa fa-linkedin"></a>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright reserved!
+
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>

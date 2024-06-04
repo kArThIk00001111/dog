@@ -1,0 +1,48 @@
+import nltk
+import random
+
+nltk.download('punkt')
+
+# Define a list of symptoms and associated possible conditions
+symptoms = {
+    "cough": ["Kennel cough", "Heartworm disease"],
+    "vomiting": ["Gastric problems", "Parvovirus"],
+    "diarrhea": ["Gastrointestinal issues", "Parvovirus"],
+    # Add more symptoms and conditions as needed
+}
+
+# Define a function to diagnose the disease based on symptoms
+def diagnose_dog_disease(symptoms):
+    possible_conditions = []
+    for symptom in symptoms:
+        if symptom in symptoms:
+            possible_conditions.extend(symptoms[symptom])
+    if possible_conditions:
+        return list(set(possible_conditions))
+    else:
+        return ["No specific disease found. Please consult a veterinarian."]
+
+# Define a function to interact with the user
+def chatbot():
+    print("Hello! I am your dog health chatbot. I can help you identify potential health issues in your dog based on symptoms.")
+    while True:
+        user_input = input("Please describe the symptoms your dog is experiencing (comma-separated): ").lower()
+        user_symptoms = [symptom.strip() for symptom in user_input.split(',')]
+        
+        if 'exit' in user_symptoms:
+            print("Goodbye! If you have concerns about your dog's health, please consult a veterinarian.")
+            break
+        
+        possible_conditions = diagnose_dog_disease(user_symptoms)
+        
+        if possible_conditions:
+            if len(possible_conditions) == 1:
+                print(f"The potential issue with your dog could be: {possible_conditions[0]}.")
+            else:
+                print(f"The potential issues with your dog could be: {', '.join(possible_conditions)}.")
+        else:
+            print("No specific disease found. Please consult a veterinarian.")
+
+if __name__ == "__main__":
+    chatbot()
+

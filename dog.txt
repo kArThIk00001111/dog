@@ -1,0 +1,38 @@
+@startuml
+
+left to right direction
+
+
+actor User as "User"
+actor Admin as "Admin"
+
+rectangle "Dog Adoption System with chat support" {
+   User --> (home page)
+  User --> (View Dogs)
+  User --> (Search Dogs)
+  User --> (View Dog Details)
+  
+  
+  
+  User --> (Adopt Dog)
+  User --> (donate a pet)
+  User --> ( chat )
+  
+
+
+  
+  
+  Admin --> (Manage Users)
+  Admin --> (Review Applications)
+  Admin --> (Notify User)
+
+
+  
+  (User) --> (Adopt Dog)
+  
+  (Review Applications) --> (Notify User)
+}
+
+
+
+@enduml
